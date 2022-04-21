@@ -36,18 +36,4 @@ const Home = ({ data }) => {
   )
 }
 
-export const query = graphql`{
-  allMdx(sort: {fields: frontmatter___date, order: DESC}) {
-    nodes {
-      frontmatter {
-        date(formatString: "MMMM D, YYYY")
-        title
-        desc
-      }
-      id
-      slug
-    }
-  }
-}
-`
 export default Home

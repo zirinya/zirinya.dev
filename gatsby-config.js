@@ -9,14 +9,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-fontawesome-css",
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/blogs`,
-      }
-    },
-
-    {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
