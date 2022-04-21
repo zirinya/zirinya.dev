@@ -1,0 +1,1 @@
+# zirinya.dev
