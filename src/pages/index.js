@@ -1,21 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faGithub,
-//   faCodepen,
-//   faDribbble,
-//   faInstagram,
-// } from "@fortawesome/free-brands-svg-icons";
-
-// const link = {
-//   fontSize: "20px",
-//   marginRight: "8px",
-// };
-// const socialLink = {
-//   marginTop: "24px",
-// };
 const Home = ({ data }) => {
   return (
     <Layout pageTitle="Home | zirinya.dev">

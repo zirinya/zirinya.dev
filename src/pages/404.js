@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout";
-const NotFoundPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+const NotFoundPage = () => {
   return (
     <Layout location={location} title={siteTitle}>
    
