@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-const BlogPostTemplate = ({ data }) => {
+const NotesPost = ({ data }) => {
   const post = data.markdownRemark;
   const { title, slug, date } = post.frontmatter;
   return (
@@ -17,10 +17,9 @@ const BlogPostTemplate = ({ data }) => {
   );
 };
 
-export default BlogPostTemplate;
-
+export default NotesPost;
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String) {
+  query NotesPost($slug: String) {
     site {
       siteMetadata {
         title
@@ -32,7 +31,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        desc
       }
     }
   }
