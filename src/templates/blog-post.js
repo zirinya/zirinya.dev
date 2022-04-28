@@ -1,35 +1,25 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
+import * as React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
 const BlogPostTemplate = ({ data }) => {
-  const post = data.markdownRemark
-
+  const post = data.markdownRemark;
   return (
-    <Layout >
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+    <Layout>
+      <article className="blog-post">
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <h1>{post.frontmatter.title}</h1>
+          <small>{post.frontmatter.date}</small>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String
-  ) {
+  query BlogPostBySlug($id: String) {
     site {
       siteMetadata {
         title
@@ -46,4 +36,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
