@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "blog-zirinya",
-  "author": "[ ]",
+  "author": "zirinya",
   "keywords": [
     "gatsby"
   ],
@@ -18,8 +18,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
     "gatsby": "^4.12.1",
     "gatsby-cli": "^4.12.1",
     "gatsby-image": "^3.11.0",
@@ -27,14 +25,15 @@
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-image": "^2.11.1",
     "gatsby-plugin-manifest": "^4.11.1",
-    "gatsby-plugin-mdx": "^3.11.1",
     "gatsby-plugin-sharp": "^4.13.0",
     "gatsby-plugin-sitemap": "^5.11.1",
     "gatsby-remark-images": "^6.13.0",
+    "gatsby-remark-prismjs": "^6.13.0",
     "gatsby-source-filesystem": "^4.11.1",
     "gatsby-source-graphql": "^4.11.1",
-    "gatsby-transformer-remark": "^5.12.1",
+    "gatsby-transformer-remark": "^5.13.0",
     "gatsby-transformer-sharp": "^4.12.0",
+    "prismjs": "^1.28.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
