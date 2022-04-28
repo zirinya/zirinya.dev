@@ -4,13 +4,11 @@ import Layout from "../components/layout";
 const NotesPage = ({ data }) => {
   return (
     <Layout pageTitle="Notes">
-      <h1>Notes</h1>
-      <p>
-        This is note page which it what i wanna write it
-      </p>
+      <h2 className="topicHeading">Notes</h2>
+      <p>This is note page which it what i wanna write it</p>
       <div>
         {data.allMarkdownRemark.nodes.map((post) => (
-          <Link key={post.id} to={post.fields.slug} className="notesLink" >
+          <Link key={post.id} to={post.fields.slug} className="notesLink">
             <div className="notestitlewrap">
               <p>{post.frontmatter.title}</p>
               <p>{post.frontmatter.date}</p>
@@ -23,7 +21,7 @@ const NotesPage = ({ data }) => {
 };
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         fields {
           slug

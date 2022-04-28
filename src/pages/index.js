@@ -7,10 +7,10 @@ const Home = ({ data }) => {
       <div>
         <div>
           <br />
-          <h1>
+          <h2 className="topicHeading">
             Hello there,
             <br /> My name is <span>"Mayz"</span>
-          </h1>
+          </h2>
           <p>
             I am Coder who Creative and self-starting
             <br />
@@ -22,15 +22,19 @@ const Home = ({ data }) => {
         </div>
       </div>
       <div>
-        <h2>Lastest Notes</h2>
+        <h2 className="topicHeading">Latest Notes</h2>
+        <hr />
+
         {data.allMarkdownRemark.nodes.map((post) => (
-          <Link key={post.id} to={post.fields.slug} className="lastestPost" >
+          <Link key={post.id} to={post.fields.slug} className="latestPost">
             <h4>{post.frontmatter.title}</h4>
             <small>{post.frontmatter.date}</small>
             <p>{post.frontmatter.desc}</p>
           </Link>
         ))}
-         <Link to="/notes" className='notesLink'>More note</Link>
+        <Link to="/notes" className="notesLink">
+          More note
+        </Link>
       </div>
     </Layout>
   );
@@ -38,7 +42,10 @@ const Home = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 5) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 5
+    ) {
       nodes {
         fields {
           slug
