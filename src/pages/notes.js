@@ -23,21 +23,14 @@ const NotesPage = ({ data }) => {
 };
 export const query = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       nodes {
-        excerpt
         fields {
           slug
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
-          desc
         }
         id
       }
