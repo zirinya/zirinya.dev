@@ -48,12 +48,12 @@ li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+  padding: 4px;
   width: 100%;
 }
 .notestitlewrap p {
   font-weight: 400;
-  margin: 0em;
+  margin: 0;
   display: flex;
   font-size: 0.9em;
 }
@@ -77,7 +77,25 @@ li a {
 .space-right{
   margin-right: 16px;
 }
-
+.lastestPost{
+  border: 1px solid rgba(214, 214, 214, 0.684);
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.lastestPost  h4 {
+  margin: 0;
+  color: rgba(185, 111, 255);
+  /* color: #a401cc; */
+}
+.lastestPost small{
+  color: #6e6e6ea1;
+}
+.lastestPost p{
+  color: #323232;
+}
 /* code block */
 .gatsby-highlight {
   padding: 8px 16px;

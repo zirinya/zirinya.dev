@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import { Link } from "gatsby";
-const Home = () => {
+import { Link, graphql } from "gatsby";
+const Home = ({ data }) => {
   return (
     <Layout pageTitle="Home | zirinya.dev">
       <div>
@@ -21,7 +21,36 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <div>
+        <h2>Lastest Notes</h2>
+        {data.allMarkdownRemark.nodes.map((post) => (
+          <Link key={post.id} to={post.fields.slug} className="lastestPost" >
+            <h4>{post.frontmatter.title}</h4>
+            <small>{post.frontmatter.date}</small>
+            <p>{post.frontmatter.desc}</p>
+          </Link>
+        ))}
+         <Link to="/notes" className='notesLink'>More note</Link>
+      </div>
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 5) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          desc
+        }
+        id
+      }
+    }
+  }
+`;
 export default Home;
