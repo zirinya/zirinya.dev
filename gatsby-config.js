@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-plugin-fontawesome-css",
+    "gatsby-remark-images",
 
     {
       resolve: `gatsby-plugin-manifest`,
@@ -24,6 +25,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-transformer-remark`,
+ 
       options: {
         // Footnotes mode (default: true)
         footnotes: true,
@@ -46,6 +48,13 @@ module.exports = {
               },
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+
         ],
       },
     },
