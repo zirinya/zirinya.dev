@@ -3,12 +3,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 const BlogPostTemplate = ({ data }) => {
   const post = data.markdownRemark;
+  const { title, slug, date } = post.frontmatter;
   return (
-    <Layout>
-      <article className="blog-post">
+    <Layout pageTitle={title}>
+      <article className="blog-post" id={slug}>
         <header>
-          <h1>{post.frontmatter.title}</h1>
-          <small>{post.frontmatter.date}</small>
+          <h1>{title}</h1>
+          <small>{date}</small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
@@ -19,15 +20,14 @@ const BlogPostTemplate = ({ data }) => {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($id: String) {
+  query BlogPostBySlug($slug: String) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title
