@@ -1,23 +1,19 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
-
 const NotesPage = ({ data }) => {
   return (
     <Layout pageTitle="Notes">
       <h1>Notes</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
-        dolorum, tempora vel reiciendis nostrum aut recusandae mollitia velit
-        quibusdam tempore officiis facere alias. Hic facere sint enim, ipsam
-        laudantium esse?
+        This is note page which it what i wanna write it
       </p>
       <div>
         {data.allMarkdownRemark.nodes.map((post) => (
-          <Link key={post.fields.slug} to={post.fields.slug}>
+          <Link key={post.id} to={post.fields.slug} className="notesLink" >
             <div className="notestitlewrap">
-              <h4 className="notesLinks">{post.frontmatter.title}</h4>
-              <span>{post.frontmatter.date}</span>
+              <p>{post.frontmatter.title}</p>
+              <p>{post.frontmatter.date}</p>
             </div>
           </Link>
         ))}
@@ -32,7 +28,7 @@ export const query = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       nodes {
         excerpt
         fields {
@@ -43,6 +39,7 @@ export const query = graphql`
           title
           desc
         }
+        id
       }
     }
   }

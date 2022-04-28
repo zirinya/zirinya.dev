@@ -36,20 +36,39 @@ li a {
   margin-right: 32px;
   color: black;
 }
-.notesLinks {
-  font-weight: 400;
-  margin: 0.2em;
+.blog-post h1 {
+  margin-bottom: 0;
 }
+
+.attr-name {
+  color: red;
+}
+
 .notestitlewrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.2em;
+  width: 100%;
+}
+.notestitlewrap p {
+  font-weight: 400;
+  margin: 0.2em;
+  display: flex;
+  font-size: 0.9em;
 }
 .notestitlewrap:hover {
   background-color: #b984df3d;
 }
 
+.notesLink {
+  text-decoration: none;
+  color: rgba(185, 111, 255);
+  margin-right: 16px;
+}
+.notesLink:hover {
+  background-color: #b984df3d;
+}
 .ico {
   width: 25px;
   height: 25px;
@@ -57,3 +76,32 @@ li a {
   margin-right: 29px;
 }
 
+/* code block */
+.gatsby-highlight {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #27272a;
+  color: white;
+  margin-bottom: 8px;
+}
+.token .tag,
+.token .punctuation,
+.selector {
+  color: yellow;
+}
+.property {
+  color: rgb(48, 213, 164);
+}
+.language-text {
+  color: red;
+  background-color: #d2d2d22d;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+article a {
+  color: rgba(185, 111, 255);
+}
+article a:hover {
+  background-color: #b984df3d;
+}

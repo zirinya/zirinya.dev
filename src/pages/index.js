@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { Link } from "gatsby";
-const Home = ({ data }) => {
+const Home = () => {
   return (
     <Layout pageTitle="Home | zirinya.dev">
       <div>
@@ -16,42 +16,9 @@ const Home = ({ data }) => {
             <br />
             Developer who freaking up on every level.
           </p>
-          <Link to="/about">more about me</Link>
-          {/* <a href="">more about me</a> */}
-          {/* <div style={socialLink}>
-            <a href="https://github.com/zirinya">
-              {" "}
-              <FontAwesomeIcon
-                style={link}
-
-                icon={faGithub}
-              />
-            </a>
-            <a href=" https://codepen.io/zirinya ">
-              {" "}
-              <FontAwesomeIcon
-                style={link}
-
-                icon={faCodepen}
-              />
-            </a>
-            <a href="https://www.instagram.com/ayniriz/">
-              {" "}
-              <FontAwesomeIcon
-                style={link}
-
-                icon={faInstagram}
-              />
-            </a>
-            <a href="https://dribbble.com/zirinya">
-              {" "}
-              <FontAwesomeIcon
-                style={link}
-
-                icon={faDribbble}
-              />
-            </a>
-          </div> */}
+          <Link to="/about" className="notesLink">
+            More about me...
+          </Link>
         </div>
       </div>
     </Layout>
