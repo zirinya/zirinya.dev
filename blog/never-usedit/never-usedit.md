@@ -26,13 +26,21 @@ date: 2022-04-28
 ฺ
 **Browser ที่ support**
 
-แน่นอนค่ะ ไม่ Support  IE, Safari และอื่น ๆ version ล่าสุด แต่ Chrome รอด
+แน่นอน ```box-reflex``` support ไม่ทุกอัน 
 ![caniuseboxreflex](caniuseboxreflex.png "caniuseboxreflex")
+
+แต่สามารถใช้ prefixes ได้อยู่
+
+```css
+-webkit-
+-moz-
+-ms-
+-o-
+```
 
 เช็คอัพเดทได้ที่ [can i use box-reflect](https://caniuse.com/?search=box-reflect)
 
 
-.
 
 
 
