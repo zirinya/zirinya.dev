@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap");
 
 *,
 *::before,
@@ -25,42 +25,40 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
-  margin: 0 auto;
-  max-width: 768px;
+  padding: 0 1em;
 }
 
 nav {
   width: 100%;
-  padding: 2em 0;
+  padding: 0;
   border-bottom: 1px solid var(--light-line);
 }
 
-nav>ul {
+nav > ul {
   margin: 0 auto;
-  max-width: 768px;
+  padding: 2em 1em;
   display: flex;
   list-style: none;
   text-transform: capitalize;
   text-decoration: none;
   font-size: 1em;
   align-items: center;
-  padding: 0;
 }
 
-nav>li a {
+nav > li a {
   text-decoration: none;
   margin-right: 32px;
 }
 
-.aboutList>ul>li {
+.aboutList > ul > li {
   margin-bottom: 10px;
 }
 
-.aboutList>ul>li::marker {
+.aboutList > ul > li::marker {
   color: var(--theme-primary);
 }
 
@@ -180,4 +178,15 @@ article a {
 
 article a:hover {
   background-color: var(--link-hover-primary);
+}
+
+@media all and (min-width: 768px) {
+  main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  nav > ul {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
