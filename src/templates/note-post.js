@@ -1,6 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
+import Giscus from "../components/comment"
 const NotesPost = ({ data }) => {
   const post = data.markdownRemark;
   const { title, slug, date } = post.frontmatter;
@@ -12,7 +13,8 @@ const NotesPost = ({ data }) => {
           <small>{date}</small>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-      </article>
+        <Giscus />
+      </article> 
     </Layout>
   );
 };

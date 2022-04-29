@@ -64,6 +64,10 @@ nav>li a {
   color: var(--theme-primary);
 }
 
+.giscus {
+  margin-bottom: 5em;
+}
+
 .blog-post h1 {
   margin-bottom: 0;
 }
