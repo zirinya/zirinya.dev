@@ -1,7 +1,7 @@
 ---
-title: "CSS Property that I rarely use!!!"
-desc: "บล็อคนี้เรียกว่า noteแล้วกัน เพราะจะอัพเดทบ่อย ๆ โดยจะเขียนเรื่อง CSS Property ที่ใช้น้อยหรือเพิ่งรู้มะกี้"
-tags: ["css"]
+title: "box-reflect"
+desc: "บล็อคนี้เกี่ยวกับ CSS Property ที่ใช้น้อยหรือเพิ่งลองใช้มะกี้"
+tags: ["css-tip"]
 date: 2022-04-28
 ---
 
