@@ -1,34 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap');
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 :root {
   --light-line: rgba(185, 185, 185, 0.363);
-  --theme-accent: rgb(48, 0, 94);
-  --theme-primary: rgba(185, 111, 255);
+  --theme-accent: rgb(47, 0, 92);
+  --theme-primary: rgb(185, 111, 255);
   --link-hover-primary: rgba(186, 133, 224, 0.239);
   --latest-post-small: rgba(110, 110, 110, 0.631);
   --latest-post-p: rgb(50, 50, 50);
+  /* code-block */
+  --code-block-bg: rgb(39, 39, 42);
+  /* gatsby-highlight */
+  --code-font-color: rgb(255, 255, 255);
+  --code-attrb-name: rgb(255, 0, 0);
+  --code-class-selector: rgb(255, 255, 0);
+  --code-property: rgb(48, 213, 164);
+  --code-language: rgba(210, 210, 210, 0.176);
 }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+  font-family: 'Open Sans', sans-serif;
 }
+
 main {
   margin: 0 auto;
   max-width: 768px;
 }
+
 nav {
   width: 100%;
   padding: 2em 0;
   border-bottom: 1px solid var(--light-line);
 }
 
-nav > ul {
+nav>ul {
   margin: 0 auto;
   max-width: 768px;
   display: flex;
@@ -40,16 +51,19 @@ nav > ul {
   padding: 0;
 }
 
-nav > li a {
+nav>li a {
   text-decoration: none;
   margin-right: 32px;
 }
-.aboutList > ul > li {
+
+.aboutList>ul>li {
   margin-bottom: 10px;
 }
-.aboutList > ul > li::marker {
+
+.aboutList>ul>li::marker {
   color: var(--theme-primary);
 }
+
 .blog-post h1 {
   margin-bottom: 0;
 }
@@ -61,22 +75,27 @@ nav > li a {
   padding: 4px;
   width: 100%;
 }
+
 .notestitlewrap p {
   font-weight: 400;
   margin: 0;
   display: flex;
   font-size: 0.9em;
 }
+
 .notestitlewrap:hover {
   background-color: var(--link-hover-primary);
 }
+
 .notesLink {
   text-decoration: none;
   color: var(--theme-primary);
 }
+
 .notesLink:hover {
   background-color: var(--link-hover-primary);
 }
+
 .ico {
   width: 25px;
   height: 25px;
@@ -87,6 +106,7 @@ nav > li a {
 .space-right {
   margin-right: 16px;
 }
+
 .latestPost {
   border: 1px solid var(--light-line);
   display: block;
@@ -97,9 +117,10 @@ nav > li a {
 }
 
 .topicHeading {
-  margin: 1em 0 0 0;
+  margin: 2em 0 0 0;
   color: var(--theme-accent);
 }
+
 hr {
   margin: 8px 0;
   border-top: 1px solid var(--light-line);
@@ -110,9 +131,11 @@ hr {
   margin: 0;
   color: var(--theme-primary);
 }
+
 .latestPost small {
   color: var(--latest-post-small);
 }
+
 .latestPost p {
   color: var(--latest-post-p);
 }
@@ -121,31 +144,36 @@ hr {
 .gatsby-highlight {
   padding: 8px 16px;
   border-radius: 8px;
-  background-color: rgb(39, 39, 42);
-  color: rgb(255, 255, 255);
+  background-color: var(--code-block-bg);
+  color: var(--code-font-color);
   margin-bottom: 8px;
 }
+
 .token .tag,
 .token .punctuation,
 .selector {
-  color: rgb(255, 255, 0);
+  color: var(--code-class-selector);
 }
+
 .property {
-  color: rgb(48, 213, 164);
+  color: var(--code-property);
 }
+
 .language-text {
-  background-color: rgba(210, 210, 210, 0.176);
+  background-color: var(--code-language);
   padding: 4px;
   border-radius: 4px;
 }
+
 .attr-name,
 .language-text {
-  color: rgb(255, 0, 0);
+  color: var(--code-attrb-name);
 }
 
 article a {
   color: var(--theme-primary);
 }
+
 article a:hover {
   background-color: var(--link-hover-primary);
 }
