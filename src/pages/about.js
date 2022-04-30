@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About">
+    <Layout pageTitle="About | zirinya.dev">
       <div className="aboutList">
         <h2 className="topicHeading">About</h2>
         <p>

@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 const NotesPage = ({ data }) => {
   return (
-    <Layout pageTitle="Notes">
+    <Layout pageTitle="Notes | zirinya.dev">
       <h2 className="topicHeading">Notes</h2>
       <p>This is note page which it what i wanna write it</p>
       <div>
