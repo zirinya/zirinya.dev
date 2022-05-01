@@ -12,8 +12,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "vercel-install": "./vercel-submodule-workaround.sh && npm run build --production=false --ignore-script"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
