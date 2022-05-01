@@ -1,8 +1,5 @@
 node_modules/
 .cache/
 public
-<<<<<<< HEAD
 .vercel
-=======
-.vercel
->>>>>>> submodules-prod
+
