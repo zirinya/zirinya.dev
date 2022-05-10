@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from 'gatsby'
 const year = new Date().getFullYear();
 
 const Footer = () => {
@@ -8,8 +7,8 @@ const Footer = () => {
             <div> © {year} zirinya</div>
             <div className="footer_social">
                 <ul>
-                    <Link to="https://github.com/zirinya" className='notesLink '>GitHub</Link>
-                    <Link to="https://codepen.io/zirinya" className='notesLink '>Codepen</Link>
+                    <a href="https://github.com/zirinya" className='notesLink '>GitHub</a>
+                    <a href="https://codepen.io/zirinya" className='notesLink '>Codepen</a>
                 </ul>
             </div>
         </div>
