@@ -29,7 +29,7 @@ const Home = ({ data }) => {
 
         {data.allMarkdownRemark.nodes.map((post) => (
           <Link key={post.id} to={post.fields.slug} className="latestPost">
-            <h4>{post.frontmatter.title}</h4>
+            <h3>{post.frontmatter.title}</h3>
             <small>{post.frontmatter.date}</small>
             <p>{post.frontmatter.desc}</p>
           </Link>
