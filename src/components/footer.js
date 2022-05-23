@@ -7,8 +7,8 @@ const Footer = () => {
             <div> © {year} zirinya</div>
             <div className="footer_social">
                 <ul>
-                    <a href="https://github.com/zirinya" className='notesLink '>GitHub</a>
-                    <a href="https://codepen.io/zirinya" className='notesLink '>Codepen</a>
+                    <li>  <a href="https://github.com/zirinya" className='notesLink '>GitHub</a></li>
+                    <li>  <a href="https://codepen.io/zirinya" className='notesLink '>Codepen</a></li>
                 </ul>
             </div>
         </div>

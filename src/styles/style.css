@@ -104,6 +104,7 @@ nav > li a {
   height: 25px;
   background-color: var(--theme-primary);
   margin-right: 29px;
+  color: var(--theme-primary);
 }
 
 .space-right {
@@ -130,7 +131,7 @@ hr {
 }
 
 /* latestPost */
-.latestPost h4 {
+.latestPost h3 {
   margin: 0;
   color: var(--theme-primary);
 }
@@ -203,27 +204,32 @@ article a:hover {
 }
 .text-center {
   text-align: center;
-  color: var( --latest-post-small);
+  color: var(--latest-post-small);
 }
 
-.notfound-page{
+.notfound-page {
   min-height: calc(100vh - 215px);
 }
 
-.footer{
+.footer {
   padding: 2em;
   font-size: 1em;
   color: var(--latest-post-small);
   display: flex;
 }
-.footer_social{
+.footer_social {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
 }
-.footer_social > ul{
-  padding: 0;
+.footer_social > ul {
   list-style: none;
   margin: 0;
-  display: flex;  flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
+}
+.footer_social > ul > li > a {
+  padding: 0.6em;
+  display: block;
 }
