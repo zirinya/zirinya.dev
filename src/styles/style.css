@@ -9,9 +9,9 @@
 :root {
   --light-line: rgba(185, 185, 185, 0.363);
   --theme-accent: rgb(47, 0, 92);
-  --theme-primary: rgb(185, 111, 255);
+  --theme-primary: rgb(138, 75, 175);
   --link-hover-primary: rgba(186, 133, 224, 0.239);
-  --latest-post-small: rgba(110, 110, 110, 0.631);
+  --latest-post-small: rgb(110, 110, 110);
   --latest-post-p: rgb(50, 50, 50);
   /* code-block */
   --code-block-bg: rgb(39, 39, 42);
@@ -134,6 +134,9 @@ hr {
 .latestPost h3 {
   margin: 0;
   color: var(--theme-primary);
+  font-size: medium;
+  text-decoration: underline;
+  text-decoration-color:  var(--theme-primary);
 }
 
 .latestPost small {
