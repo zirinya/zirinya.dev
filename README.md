@@ -1,2 +1,2 @@
-##### 📋 [Website ziriya.dev](https://zirinya0.dev)
+##### 📋 [Website ziriya.dev](https://zirinya.dev)
 ***
