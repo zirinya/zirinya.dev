@@ -20,8 +20,8 @@ const AboutPage = () => {
         </p>
         <h2 className="topicHeading">Year Resolution.</h2>
         <ul>
-          <li>Learn 70% day of 100%.</li>
-          <li>Find a new job.</li>
+          <li>❌ Learn 70% day of 100%.</li>
+          <li>✔️ Find a new job.</li>
         </ul>
         <h2 className="topicHeading">Interested in</h2>
         <ul>
